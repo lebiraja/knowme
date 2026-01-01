@@ -1,0 +1,58 @@
+/* Apple-Style Back to Top Button */
+
+.back-to-top {
+  position: fixed;
+  bottom: var(--spacing-lg);
+  right: var(--spacing-lg);
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-button);
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  z-index: 100;
+  box-shadow: var(--shadow-sm);
+  color: var(--text-primary);
+}
+
+.back-to-top:hover {
+  transform: translateY(-2px) scale(1.05);
+  background: var(--glass-hover);
+  border-color: rgba(255, 215, 0, 0.3);
+  box-shadow: var(--shadow-hover);
+}
+
+.back-to-top:active {
+  transform: translateY(0) scale(1);
+}
+
+.back-to-top svg {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.2s ease;
+}
+
+.back-to-top:hover svg {
+  transform: translateY(-1px);
+}
+
+/* Mobile optimization */
+@media (max-width: 767px) {
+  .back-to-top {
+    bottom: var(--spacing-md);
+    right: var(--spacing-md);
+    width: 44px;
+    height: 44px;
+  }
+
+  .back-to-top svg {
+    width: 18px;
+    height: 18px;
+  }
+}

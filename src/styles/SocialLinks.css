@@ -1,0 +1,15 @@
+/* Social Links Container */
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  width: 100%;
+}
+
+/* Mobile optimization */
+@media (max-width: 767px) {
+  .social-links {
+    gap: 0.75rem;
+  }
+}
