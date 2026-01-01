@@ -1,0 +1,49 @@
+/* Apple-Style Dark Theme */
+
+:root {
+  /* Apple-style dark background */
+  --bg-primary: #000000;
+  --bg-secondary: #1c1c1e;
+
+  /* Liquid glass effects */
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-hover: rgba(255, 255, 255, 0.08);
+  --glass-blur: blur(20px);
+
+  /* Golden gradients */
+  --gold: #FFD700;
+  --gold-orange: #FFA500;
+  --gold-gradient: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+
+  /* Text colors */
+  --text-primary: #FFFFFF;
+  --text-secondary: #8E8E93;
+
+  /* Cylindrical border radius */
+  --radius-card: 32px;
+  --radius-button: 24px;
+  --radius-small: 16px;
+
+  /* Shadows - Apple-style soft */
+  --shadow-sm: 0 4px 16px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 8px 32px rgba(0, 0, 0, 0.3);
+  --shadow-hover: 0 12px 40px rgba(255, 215, 0, 0.2);
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+}
+
+/* Smooth transitions */
+* {
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
